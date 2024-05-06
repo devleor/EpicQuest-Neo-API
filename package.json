@@ -1,0 +1,25 @@
+{
+  "name": "epicquest-neo-api",
+  "version": "1.0.0",
+  "description": "A Node.js API for role-playing games, enabling character management and real-time battles. Offers scalable endpoints for game interactions and dynamics. Includes comprehensive documentation for easy integration.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "ts-jest": "^29.1.2"
+  }
+}
