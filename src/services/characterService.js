@@ -1,6 +1,6 @@
 // src/services/characterService.js
 const jobConfigurations = require('../utils/jobConfig');
-const Character = require('../models/character');
+const Character = require('../models/Character');
 const CharacterFactory = require('../factories/CharacterFactory');
 
 class CharacterService {
@@ -23,12 +23,13 @@ class CharacterService {
     }
 
     updateCharacterJob(id, newJob) {
-        const character = this.getCharacterById(id);
+        const character = this.characters.find(char => char.id === parseInt(id, 10));
         if (!character) {
             throw new Error("Character not found");
         }
         const config = jobConfigurations[newJob];
         character.job = newJob;
+        character.healthPoints = config.healthPoints
         character.attributes = config.attributes;
         character.attackModifier = config.attackModifier(config.attributes);
         character.speedModifier = config.speedModifier(config.attributes);

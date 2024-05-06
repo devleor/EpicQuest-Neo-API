@@ -1,4 +1,4 @@
-const BattleService = require('../services/battleService');
+const BattleService = require('../services/BattleService');
 
 class GameController {
     async startBattle(character1Id, character2Id) {

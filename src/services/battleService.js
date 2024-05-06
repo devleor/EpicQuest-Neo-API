@@ -1,5 +1,5 @@
-const Battle = require('../models/battle');
-const characterService = require('./characterService');
+const Battle = require('../models/Battle');
+const characterService = require('./CharacterService');
 
 class BattleService {
     constructor() {

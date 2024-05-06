@@ -1,10 +1,8 @@
-const Character = require('./character');
-const jobConfigurations = require('../utils/jobConfig');
+const Character = require('./Character');
 
 class Mage extends Character {
     constructor(id, name) {
         super(id, name, 'Mage');
-        // Additional Mage-specific initialization, if necessary
     }
 
     castFireball() {

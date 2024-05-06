@@ -1,5 +1,4 @@
-const Character = require('./character');
-const jobConfigurations = require('../utils/jobConfig');
+const Character = require('./Character');
 
 class Thief extends Character {
     constructor(id, name) {
